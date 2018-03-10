@@ -10,3 +10,4 @@ machine:
 dependencies:
     pre:
     - sudo ps aux | grep -i docker
+    - sudo cat /etc/*release*
