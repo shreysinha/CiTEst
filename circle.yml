@@ -12,6 +12,7 @@ dependencies:
     - sudo ps aux | grep -i docker
     - sudo cat /etc/*release*
     - sudo ls -l /usr/share/upstart
+    - sudo ls -l /usr/lib/systemd
 
 test:
   pre:
