@@ -1,0 +1,8 @@
+machine:
+  services:
+    - docker
+  pre:
+    - curl -k https://jaxf-github.fanatics.corp/raw/devops/ci-standards/master/circleci/npm/setup-npmrc.sh | bash
+    - curl -sSL https://s3.amazonaws.com/circle-downloads/install-circleci-docker.sh | bash -s -- 1.10.0
+  node:
+    version: 6.11.0
