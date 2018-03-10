@@ -13,7 +13,7 @@ dependencies:
     - sudo cat /etc/*release*
     - sudo ls -l /usr/share/upstart
     - sudo ls -l /usr/lib/systemd
-    - /etc/init.d/docker restart
+    - sudo /etc/init.d/docker restart
 
 test:
   pre:
