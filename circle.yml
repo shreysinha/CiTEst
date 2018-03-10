@@ -11,3 +11,4 @@ dependencies:
     pre:
     - sudo ps aux | grep -i docker
     - sudo cat /etc/*release*
+    - sudo ls -l /usr/share/upstart
