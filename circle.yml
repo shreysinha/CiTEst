@@ -13,7 +13,8 @@ dependencies:
     - sudo cat /etc/*release*
     - sudo ls -l /usr/share/upstart
     - sudo ls -l /usr/lib/systemd
-    - sudo /etc/init.d/docker restart
+    - sudo service docker restart
+    - sudo ps aux | grep -i docker
 
 test:
   pre:
