@@ -15,6 +15,8 @@ dependencies:
     - sudo ls -l /usr/lib/systemd
     - sudo service docker restart
     - sudo ps aux | grep -i docker
+    - sudo service docker stop
+    - sudo docker daemon
 
 test:
   pre:
