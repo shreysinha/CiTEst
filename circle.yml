@@ -16,7 +16,8 @@ dependencies:
     - sudo service docker restart
     - sudo ps aux | grep -i docker
     - sudo service docker stop
-    - sudo docker daemon
+    - sudo /usr/bin/docker daemon -s btrfs -D
+    - sudo ps aux | grep -i docker
 
 test:
   pre:
