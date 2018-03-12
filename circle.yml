@@ -15,7 +15,6 @@ dependencies:
     - sudo ls -l /usr/lib/systemd
     - sudo service docker restart
     - sudo ps aux | grep -i docker
-    - sudo cat /proc/self/cgroup | grep -o  -e "docker-.*.scope" | head -n 1 | sed "s/docker-\(.*\).scope/\\1/"
 
 test:
   pre:
